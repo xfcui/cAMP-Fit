@@ -1,0 +1,9 @@
+Initial minimisation of sustiva-RT complex
+&cntrl
+  imin=1,        ! 开启最小化
+  maxcyc=200,    ! 最大迭代步数
+  ncyc=50,       ! 切换到共轭梯度的步数
+  cut=16.0,      ! 截断半径（单位：Å）
+  ntb=0,         ! 非周期性边界条件
+  igb=1          ! 开启 Born 隐式溶剂模型
+/

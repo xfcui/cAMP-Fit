@@ -1,0 +1,8 @@
+source oldff/leaprc.ff99SB                 # 加载ff99SB力场
+source leaprc.gaff                   # 加载 GAFF 力场
+loadamberparams cmp.frcmod           # 加载分子力场参数
+loadoff cmp.lib                      # 加载分子库文件
+cngc = loadpdb cngc30-5k8sA.pdb              # 加载分子 PDB 文件
+saveamberparm cngc cngc.prmtop cngc.inpcrd  # 保存拓扑和坐标文件
+savepdb cngc cngc.pdb          # 保存溶剂化后的 PDB 文件
+quit   
